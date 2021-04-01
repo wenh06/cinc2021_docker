@@ -15,9 +15,9 @@ FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-devel
 LABEL maintainer="wenh06@gmail.com"
 
 
-RUN mkdir /temp_dir
-COPY ./ /temp_dir
-WORKDIR /temp_dir
+RUN mkdir /cinc2021_temp_dir
+COPY ./ /cinc2021_temp_dir
+WORKDIR /cinc2021_temp_dir
 
 
 ## Install your dependencies here using apt install, etc.
