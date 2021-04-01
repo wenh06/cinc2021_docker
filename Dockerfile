@@ -47,6 +47,9 @@ RUN pip install torch==1.6.0+cu101 -f https://download.pytorch.org/whl/torch_sta
 # RUN python docker_test.py
 
 
+RUN python torch_version.py
+
+
 
 # commands to run test with docker container:
 
