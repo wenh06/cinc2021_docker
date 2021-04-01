@@ -14,10 +14,10 @@ FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-devel
 ## The MAINTAINER instruction sets the author field of the generated images.
 LABEL maintainer="wenh06@gmail.com"
 
-## DO NOT EDIT the 3 lines.
-# RUN mkdir /physionet
-# COPY ./ /physionet
-# WORKDIR /physionet
+
+RUN mkdir /temp_dir
+COPY ./ /temp_dir
+WORKDIR /temp_dir
 
 
 ## Install your dependencies here using apt install, etc.
